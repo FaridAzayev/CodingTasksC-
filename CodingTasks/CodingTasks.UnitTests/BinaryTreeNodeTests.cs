@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingTasks
+namespace CodingTasks.UnitTests
 {
     [TestFixture]
-    public class BinaryTreeNodeTest
+    public class BinaryTreeNodeTests
     {
         [Test]
         public void TestEquals()

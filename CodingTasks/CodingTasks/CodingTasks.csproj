@@ -51,9 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BinaryTreeNode.cs" />
-    <Compile Include="BinaryTreeNodeTest.cs" />
     <Compile Include="Element.cs" />
-    <Compile Include="ElementListTest.cs" />
     <Compile Include="MyExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

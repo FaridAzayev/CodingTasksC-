@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodingTasks
+namespace CodingTasks.UnitTests
 {
     [TestFixture]
-    class ElementListTest
+    class ElementListTests
     {
         [Test]
         public void getElementCollectionTest()
