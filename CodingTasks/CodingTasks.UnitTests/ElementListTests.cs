@@ -11,17 +11,15 @@ namespace CodingTasks.UnitTests
     class ElementListTests
     {
         [Test]
-        public void getElementCollectionTest()
-        {
-            var eList = new List<Element>();        
+        public void GetElementCollectionTest_MustReturnTrue(){
+            var eList = new List<Element>();
             eList.Add(new Element() { age = 1, num = 5 });
             eList.Add(new Element() { age = 1, num = 4 });
             eList.Add(new Element() { age = 21, num = 5 });
             eList.Add(new Element() { age = 21, num = 3, name = "b" });
             eList.Add(new Element() { age = 21, num = 3, name = "a" });
 
-            Assert.AreEqual(eList.getElementCollection().Count, 2);
-            Assert.Pass("getElementCollection test passed");
+            Assert.That(eList.getElementCollection().Count, Is.EqualTo(2));
         }
     }
 }

@@ -10,17 +10,17 @@ namespace CodingTasks
     {
         /// <summary>Recursively checks two trees node by node </summary>
         /// <returns>true if every tree has same valu at the same place</returns>
-        public static bool isBinaryTreesEqual(BinaryTreeNode first, BinaryTreeNode second){
-            if (first == null && second == null)
+        public static bool isBinaryTreesEqual(BinaryTreeNode root1, BinaryTreeNode root2){
+            if (root1 == null && root2 == null)
                 return true;
 
-            if ((first == null && second != null) || (first != null && second == null))
+            if ((root1 == null && root2 != null) || (root1 != null && root2 == null))
                 return false;
 
-            if (first.value != second.value)
+            if (root1.value != root2.value)
                 return false;
 
-            return isBinaryTreesEqual(first.left, second.left) && isBinaryTreesEqual(first.right, second.right);
+            return isBinaryTreesEqual(root1.left, root2.left) && isBinaryTreesEqual(root1.right, root2.right);
         }        
     }
 }
